@@ -32,10 +32,14 @@ The [variance][variance] for a [Fréchet][frechet-distribution] random variable 
 
 <!-- <equation class="equation" label="eq:frechet_variance" align="center" raw="\operatorname{Var}\left( X \right) = \begin{cases} s^{2}\left(\Gamma \left(1-{\frac{2}{\alpha }}\right)-\left(\Gamma\left(1-{\frac {1}{\alpha }}\right)\right)^{2}\right) & {\text {for }}\alpha > 2\\\ \infty & \text{ otherwise } \end{cases}" alt="Variance for a Fréchet distribution."> -->
 
-<div class="equation" align="center" data-raw-text="\operatorname{Var}\left( X \right) = \begin{cases} s^{2}\left(\Gamma \left(1-{\frac{2}{\alpha }}\right)-\left(\Gamma\left(1-{\frac {1}{\alpha }}\right)\right)^{2}\right) &amp; {\text {for }}\alpha &gt; 2\\\ \infty &amp; \text{ otherwise } \end{cases}" data-equation="eq:frechet_variance">
+```math
+\operatorname{Var}\left( X \right) = \begin{cases} s^{2}\left(\Gamma \left(1-{\frac{2}{\alpha }}\right)-\left(\Gamma\left(1-{\frac {1}{\alpha }}\right)\right)^{2}\right) & {\text {for }}\alpha > 2\\\ \infty & \text{ otherwise } \end{cases}
+```
+
+<!-- <div class="equation" align="center" data-raw-text="\operatorname{Var}\left( X \right) = \begin{cases} s^{2}\left(\Gamma \left(1-{\frac{2}{\alpha }}\right)-\left(\Gamma\left(1-{\frac {1}{\alpha }}\right)\right)^{2}\right) &amp; {\text {for }}\alpha &gt; 2\\\ \infty &amp; \text{ otherwise } \end{cases}" data-equation="eq:frechet_variance">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@591cf9d5c3a0cd3c1ceec961e5c49d73a68374cb/lib/node_modules/@stdlib/stats/base/dists/frechet/variance/docs/img/equation_frechet_variance.svg" alt="Variance for a Fréchet distribution.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 
@@ -47,14 +51,30 @@ where `Γ` is the [gamma function][gamma-function].
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/stats-base-dists-frechet-variance
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import variance from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-frechet-variance@deno/mod.js';
+var variance = require( '@stdlib/stats-base-dists-frechet-variance' );
 ```
 
 #### variance( alpha, s, m )
@@ -133,9 +153,9 @@ y = variance( 1.0, -1.0, 2.0 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@deno/mod.js';
-import EPS from 'https://cdn.jsdelivr.net/gh/stdlib-js/constants-float64-eps@deno/mod.js';
-import variance from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-frechet-variance@deno/mod.js';
+var randu = require( '@stdlib/random-base-randu' );
+var EPS = require( '@stdlib/constants-float64-eps' );
+var variance = require( '@stdlib/stats-base-dists-frechet-variance' );
 
 var alpha;
 var m;
@@ -181,7 +201,7 @@ for ( i = 0; i < 10; i++ ) {
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -225,7 +245,7 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 -->
 
 [chat-image]: https://img.shields.io/gitter/room/stdlib-js/stdlib.svg
-[chat-url]: https://gitter.im/stdlib-js/stdlib/
+[chat-url]: https://app.gitter.im/#/room/#stdlib-js_stdlib:gitter.im
 
 [stdlib]: https://github.com/stdlib-js/stdlib
 
