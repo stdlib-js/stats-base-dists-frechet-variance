@@ -33,7 +33,7 @@ The [variance][variance] for a [Fréchet][frechet-distribution] random variable 
 <!-- <equation class="equation" label="eq:frechet_variance" align="center" raw="\operatorname{Var}\left( X \right) = \begin{cases} s^{2}\left(\Gamma \left(1-{\frac{2}{\alpha }}\right)-\left(\Gamma\left(1-{\frac {1}{\alpha }}\right)\right)^{2}\right) & {\text {for }}\alpha > 2\\\ \infty & \text{ otherwise } \end{cases}" alt="Variance for a Fréchet distribution."> -->
 
 ```math
-\operatorname{Var}\left( X \right) = \begin{cases} s^{2}\left(\Gamma \left(1-{\frac{2}{\alpha }}\right)-\left(\Gamma\left(1-{\frac {1}{\alpha }}\right)\right)^{2}\right) & {\text {for }}\alpha > 2\\\ \infty & \text{ otherwise } \end{cases}
+\mathop{\mathrm{Var}}\left( X \right) = \begin{cases} s^{2}\left(\Gamma \left(1-{\frac{2}{\alpha }}\right)-\left(\Gamma\left(1-{\frac {1}{\alpha }}\right)\right)^{2}\right) & {\text {for }}\alpha > 2\\\ \infty & \text{ otherwise } \end{cases}
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{Var}\left( X \right) = \begin{cases} s^{2}\left(\Gamma \left(1-{\frac{2}{\alpha }}\right)-\left(\Gamma\left(1-{\frac {1}{\alpha }}\right)\right)^{2}\right) &amp; {\text {for }}\alpha &gt; 2\\\ \infty &amp; \text{ otherwise } \end{cases}" data-equation="eq:frechet_variance">
@@ -51,38 +51,30 @@ where `Γ` is the [gamma function][gamma-function].
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/stats-base-dists-frechet-variance
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-variance = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-frechet-variance@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var variance = require( 'path/to/vendor/umd/stats-base-dists-frechet-variance/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-frechet-variance@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.variance;
-})();
-</script>
+var variance = require( '@stdlib/stats-base-dists-frechet-variance' );
 ```
 
 #### variance( alpha, s, m )
@@ -160,15 +152,10 @@ y = variance( 1.0, -1.0, 2.0 );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/constants-float64-eps@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-frechet-variance@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var randu = require( '@stdlib/random-base-randu' );
+var EPS = require( '@stdlib/constants-float64-eps' );
+var variance = require( '@stdlib/stats-base-dists-frechet-variance' );
 
 var alpha;
 var m;
@@ -183,11 +170,6 @@ for ( i = 0; i < 10; i++ ) {
     y = variance( alpha, s, m );
     console.log( 'α: %d, s: %d, m: %d, Var(X;α,s,m): %d', alpha.toFixed( 4 ), s.toFixed( 4 ), m.toFixed( 4 ), y.toFixed( 4 ) );
 }
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
