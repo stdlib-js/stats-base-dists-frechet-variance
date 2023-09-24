@@ -69,7 +69,7 @@ where `Γ` is the [gamma function][gamma-function].
 ## Usage
 
 ```javascript
-import variance from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-frechet-variance@deno/mod.js';
+import variance from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-frechet-variance@v0.1.0-deno/mod.js';
 ```
 
 #### variance( alpha, s, m )
@@ -150,7 +150,7 @@ y = variance( 1.0, -1.0, 2.0 );
 ```javascript
 import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@deno/mod.js';
 import EPS from 'https://cdn.jsdelivr.net/gh/stdlib-js/constants-float64-eps@deno/mod.js';
-import variance from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-frechet-variance@deno/mod.js';
+import variance from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-frechet-variance@v0.1.0-deno/mod.js';
 
 var alpha;
 var m;
