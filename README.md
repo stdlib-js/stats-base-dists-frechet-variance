@@ -69,6 +69,11 @@ where `Γ` is the [gamma function][gamma-function].
 ## Usage
 
 ```javascript
+import variance from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-frechet-variance@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/stats-base-dists-frechet-variance/tags). For example,
+
+```javascript
 import variance from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-frechet-variance@v0.3.0-esm/index.mjs';
 ```
 
@@ -155,7 +160,7 @@ y = variance( 1.0, -1.0, 2.0 );
 
 import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@esm/index.mjs';
 import EPS from 'https://cdn.jsdelivr.net/gh/stdlib-js/constants-float64-eps@esm/index.mjs';
-import variance from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-frechet-variance@v0.3.0-esm/index.mjs';
+import variance from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-frechet-variance@esm/index.mjs';
 
 var alpha;
 var m;
