@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-08-01)
+## Unreleased (2026-08-20)
 
 <section class="commits">
 
@@ -12,6 +12,7 @@
 
 <details>
 
+-   [`2f7d58c`](https://github.com/stdlib-js/stdlib/commit/2f7d58cc76fc82334a120e4f9f671d0854ec4cbf) - **test:** migrate `stats/base/dists/frechet/variance` to ULP-based assertions [(#14434)](https://github.com/stdlib-js/stdlib/pull/14434) _(by Athan Reines)_
 -   [`f59b324`](https://github.com/stdlib-js/stdlib/commit/f59b324c3c652580e17c4c4baae8168faab8af8c) - **docs:** fix typos and copy-paste errors in `stats` TypeScript declarations [(#12482)](https://github.com/stdlib-js/stdlib/pull/12482) _(by Philipp Burckhardt, Athan Reines)_
 -   [`2ab835f`](https://github.com/stdlib-js/stdlib/commit/2ab835f6d0b8721ef7e604d7fdced904bed91443) - **docs:** refactor to use `logEachMap` in examples [(#11485)](https://github.com/stdlib-js/stdlib/pull/11485) _(by Lokesh Ranjan)_
 -   [`18db4f6`](https://github.com/stdlib-js/stdlib/commit/18db4f6ca8230913325b71f53a49ad0aac41b10b) - **bench:** update random value generation for `stats/base/dists/frechet` [(#10335)](https://github.com/stdlib-js/stdlib/pull/10335) _(by Lokesh Ranjan)_
